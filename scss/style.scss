@@ -38,34 +38,58 @@
  * GENERAL
  */
 
-img {
-    max-width: 100;
+img {max-width:100;}
+
+html {
+    min-height: 100%;
 }
+
 body {
     transition: opacity .25s ease;
-    background-color: rgb(111, 111 ,111);
+    min-height: 100%;
 }
-.centerify {
+
+div {
+    width: 15em;
+    height: 15em;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
+    border-radius: 100%;
+    &:hover {
+        h1 {
+            opacity: 0;
+        }
+        h2 {
+            opacity: 1;
+        }
+    }
 }
 
-#line {
-background-color: #FFFFFF;
-width: 30%;
-height: 5px;
-top: 60%;
 
-
+h1 {
+    font-size: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-shadow: 0 0 4px #fff, 0 0 4px #fff;
+    margin-bottom: 0;
+    transition: opacity .5s ease;
 }
 
-
-
-
-
-
-
-
+h2 {
+    font-size: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-shadow: 0 0 4px #fff, 0 0 4px #fff;
+    margin-bottom: 0;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
 
